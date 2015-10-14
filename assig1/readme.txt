@@ -1,0 +1,6 @@
+Name: Barrett Wolfson
+Description:
+There are two key programs included in this zip file: num.c and leap.c.
+num.c can be run compiled by first running "make clean" and then "make" from the command line. The program accepts an arbitrary amount of numbers or thought of as grades for a class as command line inputs, puts these values, into an array, and outputs the smallest, largest, and mean value, along with all of the values themselves. To run the program type "./num <value1> <value2> etc." The MAX_GRADES constant (the max number of command line inputs the program will process) is currently set to 20. It is possible to enter more than MAX_GRADES amount of inputs but the program will only populate it's "grades" array with the first MAX_GRADES amount. The key function that the num program relies on is called grade_info(). This function takes the grades integer array, as well as the size of the array as parameters, calculates the smallest, largest, and mean values, then prints the info. 
+
+The second program is called "leap", and it processes a command line input value and ouputs wheter or not this given value is that of a leap year.The program can be compiled by running "make clean", and then "make". Next the program can be run by typing "./leap <year_number>" The program only handles years starting at 1752.
