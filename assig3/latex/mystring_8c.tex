@@ -1,0 +1,110 @@
+\section{mystring.c File Reference}
+\label{mystring_8c}\index{mystring.c@{mystring.c}}
+{\tt \#include $<$string.h$>$}\par
+{\tt \#include $<$stdlib.h$>$}\par
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include \char`\"{}mystring.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+char $\ast$ \bf{mystrdup} (const char $\ast$src)
+\item 
+char $\ast$ \bf{mystrndup} (const char $\ast$s, size\_\-t n)
+\item 
+size\_\-t \bf{mystrlen} (const char $\ast$src)
+\item 
+char $\ast$ \bf{mystrcpy} (char $\ast$dest, const char $\ast$src)
+\item 
+char $\ast$ \bf{mystrncpy} (char $\ast$dest, const char $\ast$src, size\_\-t n)
+\item 
+char $\ast$ \bf{mystrcat} (char $\ast$dest, const char $\ast$src)
+\item 
+char $\ast$ \bf{mystrncat} (char $\ast$dest, const char $\ast$src, size\_\-t n)
+\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\index{mystring.c@{mystring.c}!mystrcat@{mystrcat}}
+\index{mystrcat@{mystrcat}!mystring.c@{mystring.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ mystrcat (char $\ast$ {\em dest}, const char $\ast$ {\em src})}\label{mystring_8c_ebc286ca79fc1f0b7ca5d05066cd79a7}
+
+
+Appends the src string to the dest string over-writing the '/0' character at the end of dest, then adds a '/0' back on to the end of the resulting string. dest string must have ebough space for result. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em dest}]Pointer to the first string of the concatenation, which becomes the result afterwards \item[{\em src}]Pointer to the string to be added onto the end of dest \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]dest Pointer to the concatenated string \end{Desc}
+\index{mystring.c@{mystring.c}!mystrcpy@{mystrcpy}}
+\index{mystrcpy@{mystrcpy}!mystring.c@{mystring.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ mystrcpy (char $\ast$ {\em dest}, const char $\ast$ {\em src})}\label{mystring_8c_515b2c58f31e99a4564e463ffbf73e2f}
+
+
+Copies the array pointed by src into the array pointed by destination (including the null ending character \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em src}]Pointer to the string to be copied \item[{\em dest}]Pointer to the new copy of the string \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]start\_\-of\_\-dest Pointer to the string copy \end{Desc}
+\index{mystring.c@{mystring.c}!mystrdup@{mystrdup}}
+\index{mystrdup@{mystrdup}!mystring.c@{mystring.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ mystrdup (const char $\ast$ {\em src})}\label{mystring_8c_148a52c665d88f52fb4995338a319d3c}
+
+
+Duplicates a C-style string. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em src}]Pointer to string to be copied \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to freshly-allocated string containing a duplicate of src or null if no memory is available \end{Desc}
+\index{mystring.c@{mystring.c}!mystrlen@{mystrlen}}
+\index{mystrlen@{mystrlen}!mystring.c@{mystring.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}size\_\-t mystrlen (const char $\ast$ {\em src})}\label{mystring_8c_eb723b75f0ec2e593259bd9e6a0837bb}
+
+
+Calculates the length of a string \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em src}]pointer to the target string \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]the length of the string (int) \end{Desc}
+\index{mystring.c@{mystring.c}!mystrncat@{mystrncat}}
+\index{mystrncat@{mystrncat}!mystring.c@{mystring.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ mystrncat (char $\ast$ {\em dest}, const char $\ast$ {\em src}, size\_\-t {\em n})}\label{mystring_8c_36e5091b981e9da826d41e7977b8e507}
+
+
+Appends the first n characters, plus a '/0' character from src onto the end of dest, overwriting the '/0' of dest. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em dest}]Pointer to the first string of concatenation, which becomes the result afterwards \item[{\em src}]Pointer to the string to be added onto the end of dest \item[{\em n}]the amount of characters from src to concatenate onto dest \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]dest Pointer to the concatenated string \end{Desc}
+\index{mystring.c@{mystring.c}!mystrncpy@{mystrncpy}}
+\index{mystrncpy@{mystrncpy}!mystring.c@{mystring.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ mystrncpy (char $\ast$ {\em dest}, const char $\ast$ {\em src}, size\_\-t {\em n})}\label{mystring_8c_86b7a78bb3914b2c6e6022b482c4a534}
+
+
+Copies the first n bytes of src. If there is no null bytes among the first n bytes of src, result will not be null-terminated. If length of src is less than n, remainder of dest will be null-padded. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em dest}]Pointer to the string copy \item[{\em src}]Pointer to the string to be copied \item[{\em n}]number of bytes to be copied \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]start\_\-of\_\-dest Pointer to the string copy \end{Desc}
+\index{mystring.c@{mystring.c}!mystrndup@{mystrndup}}
+\index{mystrndup@{mystrndup}!mystring.c@{mystring.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ mystrndup (const char $\ast$ {\em s}, size\_\-t {\em n})}\label{mystring_8c_9dc11eca5ee6b0e312610650bbe36e6d}
+
+
+Duplicates a C-style string up to n characters. If s is longer than n, only n characters are copied, and a '/0' is added. malloc() and free() are used to obtain memory for the new string. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em s}]Pointer to the string to be duplicated \item[{\em n}]the number of characters to be duplicated from s \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to the string duplicate \end{Desc}

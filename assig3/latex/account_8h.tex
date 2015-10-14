@@ -1,0 +1,156 @@
+\section{account.h File Reference}
+\label{account_8h}\index{account.h@{account.h}}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \bf{\_\-ACCOUNT}
+\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \bf{NAME\_\-LENGTH}~(10)
+\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef \bf{\_\-ACCOUNT} \bf{ACCOUNT}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\bf{ACCOUNT} $\ast$ \bf{create\_\-account} (char $\ast$name, int account\_\-number, int dollars)
+\item 
+void \bf{print\_\-account} (\bf{ACCOUNT} $\ast$a)
+\item 
+\bf{ACCOUNT} $\ast$ \bf{random\_\-account} ()
+\item 
+char $\ast$ \bf{rand\_\-str\_\-generator} (int length)
+\item 
+\bf{ACCOUNT} $\ast$$\ast$ \bf{make\_\-accounts} (int count)
+\item 
+void \bf{print\_\-accounts} (\bf{ACCOUNT} $\ast$$\ast$accounts, int count)
+\item 
+\bf{ACCOUNT} $\ast$$\ast$ \bf{shallow\_\-copy} (\bf{ACCOUNT} $\ast$$\ast$accounts, int size)
+\item 
+\bf{ACCOUNT} $\ast$$\ast$ \bf{deep\_\-copy} (\bf{ACCOUNT} $\ast$$\ast$accounts, int size)
+\item 
+void \bf{deallocate} (\bf{ACCOUNT} $\ast$$\ast$accounts, int size)
+\end{CompactItemize}
+
+
+\subsection{Define Documentation}
+\index{account.h@{account.h}!NAME_LENGTH@{NAME\_\-LENGTH}}
+\index{NAME_LENGTH@{NAME\_\-LENGTH}!account.h@{account.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define NAME\_\-LENGTH~(10)}\label{account_8h_f71324c57f05ff9e24bd384925dd6b17}
+
+
+file \doxyref{account.h}{p.}{account_8h} with functions on account structs \begin{Desc}
+\item[Author:]Barrett Wolfson \end{Desc}
+
+
+\subsection{Typedef Documentation}
+\index{account.h@{account.h}!ACCOUNT@{ACCOUNT}}
+\index{ACCOUNT@{ACCOUNT}!account.h@{account.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef struct \bf{\_\-ACCOUNT} \bf{ACCOUNT}}\label{account_8h_ada0bcd42165cd6015b09e0d51d49841}
+
+
+
+
+\subsection{Function Documentation}
+\index{account.h@{account.h}!create_account@{create\_\-account}}
+\index{create_account@{create\_\-account}!account.h@{account.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{ACCOUNT}$\ast$ create\_\-account (char $\ast$ {\em name}, int {\em account\_\-number}, int {\em dollars})}\label{account_8h_a56cfd85c8adc177bc126f9ffb5e5451}
+
+
+creates an ACCOUNT struct from data passed in as parameters \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em name}]Pointer to character array expressing name of account owner \item[{\em account\_\-number}]integer account number \item[{\em dollars}]integer number of dollars in the account \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to created ACCOUNT struct \end{Desc}
+\index{account.h@{account.h}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!account.h@{account.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void deallocate (\bf{ACCOUNT} $\ast$$\ast$ {\em accounts}, int {\em size})}\label{account_8h_2a864bdb59fadc4b31f4683a7207b00b}
+
+
+de-allocates all the structs pointed to by accounts array of pointers \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em accounts}]Pointer to the array of pointers to be freed up \item[{\em size}]the number of accounts \end{description}
+\end{Desc}
+\index{account.h@{account.h}!deep_copy@{deep\_\-copy}}
+\index{deep_copy@{deep\_\-copy}!account.h@{account.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{ACCOUNT}$\ast$$\ast$ deep\_\-copy (\bf{ACCOUNT} $\ast$$\ast$ {\em accounts}, int {\em size})}\label{account_8h_f88930e0d4be0de9092530d35a1fbd26}
+
+
+duplicates an array of pointers, including the structs that they point to \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em accounts}]Pointer to the array of pointers to copy \item[{\em size}]integer size of the accounts array \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to the duplicate array \end{Desc}
+\index{account.h@{account.h}!make_accounts@{make\_\-accounts}}
+\index{make_accounts@{make\_\-accounts}!account.h@{account.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{ACCOUNT}$\ast$$\ast$ make\_\-accounts (int {\em count})}\label{account_8h_fcec3d35dd33937a527786df8a1c8c72}
+
+
+allocates an array of size count pointers to ACCOUNT structs \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em count}]number of ACCOUNT structs to be created \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to array of Pointers all pointing to ACCOUNT structs \end{Desc}
+\index{account.h@{account.h}!print_account@{print\_\-account}}
+\index{print_account@{print\_\-account}!account.h@{account.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void print\_\-account (\bf{ACCOUNT} $\ast$ {\em a})}\label{account_8h_b9c0ff73f07894ea51b33567fc95a00d}
+
+
+prints an ACCOUNT struct \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]Pointer to the ACCOUNT struct to be printed \end{description}
+\end{Desc}
+\index{account.h@{account.h}!print_accounts@{print\_\-accounts}}
+\index{print_accounts@{print\_\-accounts}!account.h@{account.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void print\_\-accounts (\bf{ACCOUNT} $\ast$$\ast$ {\em accounts}, int {\em count})}\label{account_8h_78b27a8dc21e4b8862ba11124dda65f7}
+
+
+prints an array of pointers to ACCOUNT structs \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em accounts}]Pointer to array of pointers to ACCOUNT structs \item[{\em count}]the number of accounts \end{description}
+\end{Desc}
+\index{account.h@{account.h}!rand_str_generator@{rand\_\-str\_\-generator}}
+\index{rand_str_generator@{rand\_\-str\_\-generator}!account.h@{account.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ rand\_\-str\_\-generator (int {\em length})}\label{account_8h_823f9b82f39f1589534e5771a1e50e11}
+
+
+generates a random string of size length \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em length}]the size of the string to be generated \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to the character array that holds the generated string \end{Desc}
+\index{account.h@{account.h}!random_account@{random\_\-account}}
+\index{random_account@{random\_\-account}!account.h@{account.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{ACCOUNT}$\ast$ random\_\-account ()}\label{account_8h_cb814f996bafab0f36b11c4e5005ddb0}
+
+
+creates an ACCOUNT struct from random generated data fields \begin{Desc}
+\item[Returns:]Pointer to created ACCOUNT struct \end{Desc}
+\index{account.h@{account.h}!shallow_copy@{shallow\_\-copy}}
+\index{shallow_copy@{shallow\_\-copy}!account.h@{account.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{ACCOUNT}$\ast$$\ast$ shallow\_\-copy (\bf{ACCOUNT} $\ast$$\ast$ {\em accounts}, int {\em size})}\label{account_8h_baa77bc2f11d5b2a096c7e38d2856581}
+
+
+duplicates an array of pointers to ACCOUNT structs, but not what they point to \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em accounts}]Pointer to array of pointers to ACCOUNT structs \item[{\em size}]integer size of the array of pointers accounts \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to the array of pointer copies \end{Desc}

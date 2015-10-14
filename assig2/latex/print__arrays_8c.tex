@@ -1,0 +1,56 @@
+\section{print\_\-arrays.c File Reference}
+\label{print__arrays_8c}\index{print_arrays.c@{print\_\-arrays.c}}
+{\tt \#include $<$stdlib.h$>$}\par
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include \char`\"{}print\_\-arrays.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+void \bf{print\_\-int\_\-array} (int a[$\,$], int num\_\-elements)
+\item 
+void \bf{print\_\-double\_\-array} (double b[$\,$], int num\_\-elements)
+\item 
+int \bf{populate\_\-int\_\-array\_\-from\_\-cmdline} (int argc, const char $\ast$argv[$\,$], int a[$\,$], int num\_\-elements)
+\item 
+void \bf{print\_\-double\_\-array\_\-from\_\-cmdline} (int argc, const char $\ast$argv[$\,$], double a[$\,$], int num\_\-elements)
+\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\index{print_arrays.c@{print\_\-arrays.c}!populate_int_array_from_cmdline@{populate\_\-int\_\-array\_\-from\_\-cmdline}}
+\index{populate_int_array_from_cmdline@{populate\_\-int\_\-array\_\-from\_\-cmdline}!print_arrays.c@{print\_\-arrays.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int populate\_\-int\_\-array\_\-from\_\-cmdline (int {\em argc}, const char $\ast$ {\em argv}[$\,$], int {\em a}[$\,$], int {\em num\_\-elements})}\label{print__arrays_8c_a69307fe35d8a1fdd0a109f7847bb45d}
+
+
+Populate an array of ints, one per line, from the command line. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em argc}]number of command line args \item[{\em argv}]Array of command line inputs \item[{\em a}]Array to print \item[{\em num\_\-elements}]Number of elements in the array \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]the number of entries that were processed \end{Desc}
+\index{print_arrays.c@{print\_\-arrays.c}!print_double_array@{print\_\-double\_\-array}}
+\index{print_double_array@{print\_\-double\_\-array}!print_arrays.c@{print\_\-arrays.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void print\_\-double\_\-array (double {\em b}[$\,$], int {\em num\_\-elements})}\label{print__arrays_8c_ace85596af8d3267be95256b7536d232}
+
+
+Print an array of doubles, one per line \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]Array to print \item[{\em num\_\-elements}]Number of elements in the array \end{description}
+\end{Desc}
+\index{print_arrays.c@{print\_\-arrays.c}!print_double_array_from_cmdline@{print\_\-double\_\-array\_\-from\_\-cmdline}}
+\index{print_double_array_from_cmdline@{print\_\-double\_\-array\_\-from\_\-cmdline}!print_arrays.c@{print\_\-arrays.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void print\_\-double\_\-array\_\-from\_\-cmdline (int {\em argc}, const char $\ast$ {\em argv}[$\,$], double {\em a}[$\,$], int {\em num\_\-elements})}\label{print__arrays_8c_fb163ef3d770961b9d8f159528e9f732}
+
+
+\index{print_arrays.c@{print\_\-arrays.c}!print_int_array@{print\_\-int\_\-array}}
+\index{print_int_array@{print\_\-int\_\-array}!print_arrays.c@{print\_\-arrays.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void print\_\-int\_\-array (int {\em a}[$\,$], int {\em num\_\-elements})}\label{print__arrays_8c_56fe614d6cfded99e4e9704f9f86ae22}
+
+
+Print an array of ints, one per line \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]Array to print \item[{\em num\_\-elements}]Number of elements in the array \end{description}
+\end{Desc}

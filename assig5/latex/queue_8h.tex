@@ -1,0 +1,68 @@
+\section{queue.h File Reference}
+\label{queue_8h}\index{queue.h@{queue.h}}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \bf{queue}
+\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef \bf{queue} \bf{Queue}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\bf{Queue} $\ast$ \bf{create\_\-queue} (int max\_\-cells)
+\item 
+int \bf{enqueue} (\bf{Queue} $\ast$which\_\-queue, void $\ast$ptr)
+\item 
+void $\ast$ \bf{dequeue} (\bf{Queue} $\ast$which\_\-queue)
+\end{CompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{queue.h@{queue.h}!Queue@{Queue}}
+\index{Queue@{Queue}!queue.h@{queue.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef struct \bf{queue} \bf{Queue}}\label{queue_8h_8560ae2ddf510ea6643f85a929bffa48}
+
+
+
+
+\subsection{Function Documentation}
+\index{queue.h@{queue.h}!create_queue@{create\_\-queue}}
+\index{create_queue@{create\_\-queue}!queue.h@{queue.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Queue}$\ast$ create\_\-queue (int {\em max\_\-cells})}\label{queue_8h_37f0ebf6bb3301f99bc42638a41ab12e}
+
+
+creates a circular buffer implementation of a queue in memory \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em max\_\-cells}]the number of cells in the queue \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to the queue \end{Desc}
+\index{queue.h@{queue.h}!dequeue@{dequeue}}
+\index{dequeue@{dequeue}!queue.h@{queue.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ dequeue (\bf{Queue} $\ast$ {\em which\_\-queue})}\label{queue_8h_f8db386ebc4c0620589024d51d83f3b5}
+
+
+remove an element from the queue \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em which\_\-queue}]the target queue which we are taking an element from \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]pointer to the removed element \end{Desc}
+\index{queue.h@{queue.h}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!queue.h@{queue.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int enqueue (\bf{Queue} $\ast$ {\em which\_\-queue}, void $\ast$ {\em ptr})}\label{queue_8h_b5f34276406bb4ca11d16f5d4c608b33}
+
+
+add an element to the queue \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em which\_\-queue}]Pointer to target queue struct \item[{\em ptr}]Pointer to be added to the queue \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]int -1 for failed add, 0 for successful enqueueing \end{Desc}

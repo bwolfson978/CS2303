@@ -1,0 +1,62 @@
+\section{sort.c File Reference}
+\label{sort_8c}\index{sort.c@{sort.c}}
+{\tt \#include $<$stdlib.h$>$}\par
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\#define \bf{MAX\_\-RAND\_\-INT}~(10)
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+void \bf{bubble\_\-sort} (int a[$\,$], int size)
+\item 
+int \bf{gen\_\-random\_\-integer} (int max)
+\item 
+void \bf{populate\_\-random\_\-int\_\-array} (int a[$\,$], int size)
+\end{CompactItemize}
+
+
+\subsection{Define Documentation}
+\index{sort.c@{sort.c}!MAX_RAND_INT@{MAX\_\-RAND\_\-INT}}
+\index{MAX_RAND_INT@{MAX\_\-RAND\_\-INT}!sort.c@{sort.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-RAND\_\-INT~(10)}\label{sort_8c_dc72a4f94f12593c2dfa011bc3ba6658}
+
+
+File \begin{Desc}
+\item[Author:]Barrett Wolfson Source file for array sorting functions \end{Desc}
+
+
+\subsection{Function Documentation}
+\index{sort.c@{sort.c}!bubble_sort@{bubble\_\-sort}}
+\index{bubble_sort@{bubble\_\-sort}!sort.c@{sort.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void bubble\_\-sort (int {\em a}[$\,$], int {\em size})}\label{sort_8c_c715f97e1353ec804edd8cbda7dcd1a1}
+
+
+sorts the given array of integers into ascending order using bubble sort \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]Array of integers to be sorted \item[{\em size}]number of elements in the array \end{description}
+\end{Desc}
+\index{sort.c@{sort.c}!gen_random_integer@{gen\_\-random\_\-integer}}
+\index{gen_random_integer@{gen\_\-random\_\-integer}!sort.c@{sort.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int gen\_\-random\_\-integer (int {\em max})}\label{sort_8c_622b7a4e3e97d78fa153b5df9d88b4d6}
+
+
+generates a random integer from 0 to max inclusive \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em max}]the largest possible number returned \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]the generated random integer \end{Desc}
+\index{sort.c@{sort.c}!populate_random_int_array@{populate\_\-random\_\-int\_\-array}}
+\index{populate_random_int_array@{populate\_\-random\_\-int\_\-array}!sort.c@{sort.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void populate\_\-random\_\-int\_\-array (int {\em a}[$\,$], int {\em size})}\label{sort_8c_72431984f0a72adacd12dae0d0ff3b1e}
+
+
+populates an array with random integers \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]the Array to be filled \item[{\em size}]the length of the array \end{description}
+\end{Desc}

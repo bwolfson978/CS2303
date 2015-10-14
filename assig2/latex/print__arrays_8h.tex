@@ -1,0 +1,53 @@
+\section{print\_\-arrays.h File Reference}
+\label{print__arrays_8h}\index{print_arrays.h@{print\_\-arrays.h}}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+void \bf{print\_\-int\_\-array} (int a[$\,$], int size)
+\item 
+void \bf{print\_\-double\_\-array} (double a[$\,$], int size)
+\item 
+int \bf{populate\_\-int\_\-array\_\-from\_\-cmdline} (int argc, const char $\ast$argv[$\,$], int a[$\,$], int size)
+\item 
+void \bf{print\_\-double\_\-array\_\-from\_\-cmdline} (int argc, const char $\ast$argv[$\,$], double b[$\,$], int size)
+\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\index{print_arrays.h@{print\_\-arrays.h}!populate_int_array_from_cmdline@{populate\_\-int\_\-array\_\-from\_\-cmdline}}
+\index{populate_int_array_from_cmdline@{populate\_\-int\_\-array\_\-from\_\-cmdline}!print_arrays.h@{print\_\-arrays.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int populate\_\-int\_\-array\_\-from\_\-cmdline (int {\em argc}, const char $\ast$ {\em argv}[$\,$], int {\em a}[$\,$], int {\em num\_\-elements})}\label{print__arrays_8h_8d770c399f8c14da4c823f8f9cc9fed9}
+
+
+Populate an array of ints, one per line, from the command line. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em argc}]number of command line args \item[{\em argv}]Array of command line inputs \item[{\em a}]Array to print \item[{\em num\_\-elements}]Number of elements in the array \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]the number of entries that were processed \end{Desc}
+\index{print_arrays.h@{print\_\-arrays.h}!print_double_array@{print\_\-double\_\-array}}
+\index{print_double_array@{print\_\-double\_\-array}!print_arrays.h@{print\_\-arrays.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void print\_\-double\_\-array (double {\em b}[$\,$], int {\em num\_\-elements})}\label{print__arrays_8h_2c63d62a01ac25bf7c4fa67be16bf004}
+
+
+Print an array of doubles, one per line \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]Array to print \item[{\em num\_\-elements}]Number of elements in the array \end{description}
+\end{Desc}
+\index{print_arrays.h@{print\_\-arrays.h}!print_double_array_from_cmdline@{print\_\-double\_\-array\_\-from\_\-cmdline}}
+\index{print_double_array_from_cmdline@{print\_\-double\_\-array\_\-from\_\-cmdline}!print_arrays.h@{print\_\-arrays.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void print\_\-double\_\-array\_\-from\_\-cmdline (int {\em argc}, const char $\ast$ {\em argv}[$\,$], double {\em b}[$\,$], int {\em size})}\label{print__arrays_8h_05525f053bc8e48ffb6709b604f2962c}
+
+
+\index{print_arrays.h@{print\_\-arrays.h}!print_int_array@{print\_\-int\_\-array}}
+\index{print_int_array@{print\_\-int\_\-array}!print_arrays.h@{print\_\-arrays.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void print\_\-int\_\-array (int {\em a}[$\,$], int {\em num\_\-elements})}\label{print__arrays_8h_095c9149423818a7dbfe4003e5940f97}
+
+
+Print an array of ints, one per line \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]Array to print \item[{\em num\_\-elements}]Number of elements in the array \end{description}
+\end{Desc}

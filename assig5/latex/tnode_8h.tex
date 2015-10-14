@@ -1,0 +1,76 @@
+\section{tnode.h File Reference}
+\label{tnode_8h}\index{tnode.h@{tnode.h}}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \bf{tnode}
+\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+typedef \bf{tnode} \bf{Tnode}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+\bf{Tnode} $\ast$ \bf{create\_\-tnode} (\bf{Tnode} $\ast$node, char $\ast$value)
+\item 
+\bf{Tnode} $\ast$ \bf{add\_\-tnode} (\bf{Tnode} $\ast$current\_\-tnode, char $\ast$value)
+\item 
+void \bf{print\_\-tree} (\bf{Tnode} $\ast$root\_\-node)
+\item 
+void \bf{free\_\-tree} (\bf{Tnode} $\ast$root\_\-node)
+\end{CompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{tnode.h@{tnode.h}!Tnode@{Tnode}}
+\index{Tnode@{Tnode}!tnode.h@{tnode.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}typedef struct \bf{tnode} \bf{Tnode}}\label{tnode_8h_dc5205d32231d48b8f1b91e14575adcb}
+
+
+
+
+\subsection{Function Documentation}
+\index{tnode.h@{tnode.h}!add_tnode@{add\_\-tnode}}
+\index{add_tnode@{add\_\-tnode}!tnode.h@{tnode.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Tnode}$\ast$ add\_\-tnode (\bf{Tnode} $\ast$ {\em current\_\-tnode}, char $\ast$ {\em value})}\label{tnode_8h_0e09ab427d9f10182d2261a14b349f66}
+
+
+adds a tnode to a tree \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em current\_\-tnode}]pointer to the Tnode which we are adding below (initially root node) \end{description}
+\end{Desc}
+\index{tnode.h@{tnode.h}!create_tnode@{create\_\-tnode}}
+\index{create_tnode@{create\_\-tnode}!tnode.h@{tnode.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Tnode}$\ast$ create\_\-tnode (\bf{Tnode} $\ast$ {\em node}, char $\ast$ {\em value})}\label{tnode_8h_da5f86089fe3823ec899b99e631d3c5f}
+
+
+creates a new node on the tree \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em value}]the string value held at the node to be added \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to the added Tnode \end{Desc}
+\index{tnode.h@{tnode.h}!free_tree@{free\_\-tree}}
+\index{free_tree@{free\_\-tree}!tnode.h@{tnode.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void free\_\-tree (\bf{Tnode} $\ast$ {\em root\_\-node})}\label{tnode_8h_672b4a5d276720be5ec4fc3a21c0f5d7}
+
+
+frees all the nodes of a tree \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em root\_\-node}]Pointer to the root node of the tree \end{description}
+\end{Desc}
+\index{tnode.h@{tnode.h}!print_tree@{print\_\-tree}}
+\index{print_tree@{print\_\-tree}!tnode.h@{tnode.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void print\_\-tree (\bf{Tnode} $\ast$ {\em root\_\-node})}\label{tnode_8h_3554e5c7749b8d9de1f028016358c454}
+
+
+print all the values of the tree in-order \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em root\_\-node}]the root node of the tree to be printed \end{description}
+\end{Desc}
